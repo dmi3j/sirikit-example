@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4F6C3823D4850900422DF7 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4F6C3723D4850900422DF7 /* IntentsUI.framework */; };
+		BC4F6C3B23D4850900422DF7 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F6C3A23D4850900422DF7 /* IntentViewController.swift */; };
+		BC4F6C3E23D4850900422DF7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4F6C3C23D4850900422DF7 /* MainInterface.storyboard */; };
+		BC4F6C4223D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC4F6C3523D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BC76478821A7311900E93301 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76478721A7311900E93301 /* Account.swift */; };
 		BC76478A21A7319900E93301 /* QuickBalanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76478921A7319900E93301 /* QuickBalanceService.swift */; };
 		BC7647B321A7368000E93301 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7647B221A7368000E93301 /* IntentHandler.swift */; };
@@ -23,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC4F6C4023D4850900422DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBB5F6A21A43B6400D1F478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC4F6C3423D4850900422DF7;
+			remoteInfo = QuickBalanceIntentsUIExtension;
+		};
 		BC7647B521A7368000E93301 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCBB5F6A21A43B6400D1F478 /* Project object */;
@@ -54,6 +65,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				BC7647B721A7368000E93301 /* QuickBalanceIntentsExtension.appex in Embed App Extensions */,
+				BC4F6C4223D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +84,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC4F6C3523D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickBalanceIntentsUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4F6C3723D4850900422DF7 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		BC4F6C3A23D4850900422DF7 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		BC4F6C3D23D4850900422DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BC4F6C3F23D4850900422DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC76478621A7252300E93301 /* MyBank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyBank.entitlements; sourceTree = "<group>"; };
 		BC76478721A7311900E93301 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		BC76478921A7319900E93301 /* QuickBalanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickBalanceService.swift; sourceTree = "<group>"; };
@@ -92,6 +109,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC4F6C3223D4850900422DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4F6C3823D4850900422DF7 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC7647AD21A7368000E93301 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +142,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4F6C3623D4850900422DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC4F6C3723D4850900422DF7 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC4F6C3923D4850900422DF7 /* QuickBalanceIntentsUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BC4F6C3A23D4850900422DF7 /* IntentViewController.swift */,
+				BC4F6C3C23D4850900422DF7 /* MainInterface.storyboard */,
+				BC4F6C3F23D4850900422DF7 /* Info.plist */,
+			);
+			path = QuickBalanceIntentsUIExtension;
+			sourceTree = "<group>";
+		};
 		BC7647B121A7368000E93301 /* QuickBalanceIntentsExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +176,8 @@
 				BCBB5F7421A43B6400D1F478 /* MyBank */,
 				BCBB5F8D21A43CD900D1F478 /* QuickBalance */,
 				BC7647B121A7368000E93301 /* QuickBalanceIntentsExtension */,
+				BC4F6C3923D4850900422DF7 /* QuickBalanceIntentsUIExtension */,
+				BC4F6C3623D4850900422DF7 /* Frameworks */,
 				BCBB5F7321A43B6400D1F478 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +188,7 @@
 				BCBB5F7221A43B6400D1F478 /* MyBank.app */,
 				BCBB5F8C21A43CD900D1F478 /* QuickBalance.framework */,
 				BC7647B021A7368000E93301 /* QuickBalanceIntentsExtension.appex */,
+				BC4F6C3523D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +232,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BC4F6C3423D4850900422DF7 /* QuickBalanceIntentsUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC4F6C4523D4850900422DF7 /* Build configuration list for PBXNativeTarget "QuickBalanceIntentsUIExtension" */;
+			buildPhases = (
+				BC4F6C3123D4850900422DF7 /* Sources */,
+				BC4F6C3223D4850900422DF7 /* Frameworks */,
+				BC4F6C3323D4850900422DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickBalanceIntentsUIExtension;
+			productName = QuickBalanceIntentsUIExtension;
+			productReference = BC4F6C3523D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BC7647AF21A7368000E93301 /* QuickBalanceIntentsExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC7647B821A7368000E93301 /* Build configuration list for PBXNativeTarget "QuickBalanceIntentsExtension" */;
@@ -219,6 +282,7 @@
 			dependencies = (
 				BCBB5F9221A43CD900D1F478 /* PBXTargetDependency */,
 				BC7647B621A7368000E93301 /* PBXTargetDependency */,
+				BC4F6C4123D4850900422DF7 /* PBXTargetDependency */,
 			);
 			name = MyBank;
 			productName = MyBank;
@@ -249,10 +313,13 @@
 		BCBB5F6A21A43B6400D1F478 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Dmitrijs Beloborodovs";
 				TargetAttributes = {
+					BC4F6C3423D4850900422DF7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					BC7647AF21A7368000E93301 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -286,11 +353,20 @@
 				BCBB5F7121A43B6400D1F478 /* MyBank */,
 				BCBB5F8B21A43CD900D1F478 /* QuickBalance */,
 				BC7647AF21A7368000E93301 /* QuickBalanceIntentsExtension */,
+				BC4F6C3423D4850900422DF7 /* QuickBalanceIntentsUIExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC4F6C3323D4850900422DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4F6C3E23D4850900422DF7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC7647AE21A7368000E93301 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +394,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC4F6C3123D4850900422DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4F6C3B23D4850900422DF7 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC7647AC21A7368000E93301 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +432,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC4F6C4123D4850900422DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC4F6C3423D4850900422DF7 /* QuickBalanceIntentsUIExtension */;
+			targetProxy = BC4F6C4023D4850900422DF7 /* PBXContainerItemProxy */;
+		};
 		BC7647B621A7368000E93301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC7647AF21A7368000E93301 /* QuickBalanceIntentsExtension */;
@@ -366,6 +455,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BC4F6C3C23D4850900422DF7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC4F6C3D23D4850900422DF7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		BCBB5F7921A43B6400D1F478 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,6 +482,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC4F6C4323D4850900422DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TYL4297NU;
+				INFOPLIST_FILE = QuickBalanceIntentsUIExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.dmi3j.MyBank.QuickBalanceIntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC4F6C4423D4850900422DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TYL4297NU;
+				INFOPLIST_FILE = QuickBalanceIntentsUIExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.dmi3j.MyBank.QuickBalanceIntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BC7647B921A7368000E93301 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -643,6 +780,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC4F6C4523D4850900422DF7 /* Build configuration list for PBXNativeTarget "QuickBalanceIntentsUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC4F6C4323D4850900422DF7 /* Debug */,
+				BC4F6C4423D4850900422DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC7647B821A7368000E93301 /* Build configuration list for PBXNativeTarget "QuickBalanceIntentsExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="QuickBalanceIntentsUIExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJl-76-rZw">
+                                <rect key="frame" x="20" y="20" width="252" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ld8-gm-5Y3">
+                                <rect key="frame" x="280" y="32" width="20" height="16.5"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3wP-f9-7Nt"/>
+                                    <constraint firstAttribute="width" constant="20" id="pXj-1A-YbD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.00 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyX-r1-VfC">
+                                <rect key="frame" x="20" y="48.5" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ld8-gm-5Y3" firstAttribute="leading" secondItem="hJl-76-rZw" secondAttribute="trailing" constant="8" symbolic="YES" id="0Fx-9i-z9y"/>
+                            <constraint firstItem="Ld8-gm-5Y3" firstAttribute="leading" secondItem="CyX-r1-VfC" secondAttribute="trailing" constant="8" symbolic="YES" id="8Qb-im-baj"/>
+                            <constraint firstItem="Ld8-gm-5Y3" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="Al7-nl-fVw"/>
+                            <constraint firstItem="CyX-r1-VfC" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="20" symbolic="YES" id="E3r-yN-19M"/>
+                            <constraint firstItem="hJl-76-rZw" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="20" symbolic="YES" id="GIF-ow-sVB"/>
+                            <constraint firstItem="CyX-r1-VfC" firstAttribute="top" secondItem="hJl-76-rZw" secondAttribute="bottom" constant="8" symbolic="YES" id="GRA-5A-Afl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CyX-r1-VfC" secondAttribute="bottom" constant="10" id="HHZ-AN-48d"/>
+                            <constraint firstAttribute="trailing" secondItem="Ld8-gm-5Y3" secondAttribute="trailing" constant="20" symbolic="YES" id="ejU-3z-JTe"/>
+                            <constraint firstItem="hJl-76-rZw" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" constant="20" symbolic="YES" id="vqq-kz-KNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="80"/>
+                    <connections>
+                        <outlet property="accountBalanceLabel" destination="CyX-r1-VfC" id="RtP-WD-i4a"/>
+                        <outlet property="accountTitleLabel" destination="hJl-76-rZw" id="cRr-5E-KWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
