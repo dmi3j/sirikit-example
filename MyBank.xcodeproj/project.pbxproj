@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC47C21C23D705FF000562AB /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC47C21B23D705FF000562AB /* AppIntentVocabulary.plist */; };
 		BC4F6C3823D4850900422DF7 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4F6C3723D4850900422DF7 /* IntentsUI.framework */; };
 		BC4F6C3B23D4850900422DF7 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F6C3A23D4850900422DF7 /* IntentViewController.swift */; };
 		BC4F6C3E23D4850900422DF7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4F6C3C23D4850900422DF7 /* MainInterface.storyboard */; };
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC47C21B23D705FF000562AB /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		BC4F6C3523D4850900422DF7 /* QuickBalanceIntentsUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickBalanceIntentsUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4F6C3723D4850900422DF7 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		BC4F6C3A23D4850900422DF7 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				BCBB5F7C21A43B6700D1F478 /* Assets.xcassets */,
 				BCBB5F7E21A43B6700D1F478 /* LaunchScreen.storyboard */,
 				BCBB5F8121A43B6700D1F478 /* Info.plist */,
+				BC47C21B23D705FF000562AB /* AppIntentVocabulary.plist */,
 			);
 			path = MyBank;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				BCBB5F8021A43B6700D1F478 /* LaunchScreen.storyboard in Resources */,
 				BCBB5F7D21A43B6700D1F478 /* Assets.xcassets in Resources */,
+				BC47C21C23D705FF000562AB /* AppIntentVocabulary.plist in Resources */,
 				BCBB5F7B21A43B6400D1F478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
